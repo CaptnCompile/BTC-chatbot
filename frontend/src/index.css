@@ -1,0 +1,434 @@
+/* ── Design tokens ────────────────────────────────────────────────────────
+   Direction: amber-phosphor trading terminal. The dark surface is a blue-cast
+   slate rather than pure black, which lets the warm amber read as phosphor
+   glow instead of neon.
+
+   --up / --down are lifted from TradingView's default candle colours on
+   purpose. The widget owns half the viewport and we can't restyle its candles,
+   so the UI matches the chart rather than fighting it.
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  --void: #0f1216;
+  --panel: #161b22;
+  --panel-hi: #1c2330;
+  --rule: #232a34;
+  --dim: #7d8895;
+  --text: #dde3ea;
+  --amber: #ffb020;
+  --amber-dim: #8a6019;
+  --up: #26a69a;
+  --down: #ef5350;
+
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+
+  --tape-h: 58px;
+  --header-h: 48px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Digits must not jitter as prices tick. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Shell ────────────────────────────────────────────────────────────── */
+.app {
+  display: grid;
+  grid-template-rows: var(--header-h) var(--tape-h) 1fr;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--panel);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* The amber bar is the one piece of pure ornament, and it earns its place by
+   being the mark itself — there is no logo. */
+.brand::before {
+  content: '';
+  width: 3px;
+  height: 15px;
+  background: var(--amber);
+}
+
+.status {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dim);
+  letter-spacing: 0.06em;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--dim);
+  flex: none;
+}
+.dot.live {
+  background: var(--up);
+  box-shadow: 0 0 0 3px rgb(38 166 154 / 0.16);
+}
+.dot.down {
+  background: var(--down);
+  box-shadow: 0 0 0 3px rgb(239 83 80 / 0.16);
+}
+
+/* ── The tape ─────────────────────────────────────────────────────────────
+   The signature element. It renders precisely the fields the model is grounded
+   in, so the numbers on screen are the numbers in its context window. Squared
+   off and tabular: this is machine output, and it should look like it. */
+.tape {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--rule);
+  background: var(--void);
+  scrollbar-width: none;
+}
+.tape::-webkit-scrollbar {
+  display: none;
+}
+
+.cell {
+  flex: 1 0 auto;
+  min-width: 104px;
+  padding: 8px 16px;
+  border-right: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+.cell:last-child {
+  border-right: 0;
+}
+.cell.wide {
+  min-width: 190px;
+  flex: 2 0 auto;
+}
+
+.cell-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.cell-value {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--amber);
+  white-space: nowrap;
+}
+.cell-value.plain {
+  color: var(--text);
+}
+.cell-value.up {
+  color: var(--up);
+}
+.cell-value.down {
+  color: var(--down);
+}
+.cell-value.small {
+  font-size: 12px;
+  font-family: var(--sans);
+  color: var(--text);
+  white-space: normal;
+  line-height: 1.3;
+}
+
+/* ── Split ────────────────────────────────────────────────────────────── */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 33%);
+  min-height: 0;
+}
+
+.chart {
+  position: relative;
+  border-right: 1px solid var(--rule);
+  min-height: 0;
+  background: var(--void);
+}
+.chart > div {
+  height: 100%;
+}
+
+.chart-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 6px;
+  text-align: center;
+  padding: 24px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* ── Chat ─────────────────────────────────────────────────────────────── */
+.chat {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 0;
+  background: var(--panel);
+}
+
+.chat-head {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.log {
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+
+.msg {
+  max-width: 92%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.msg.user {
+  align-self: flex-end;
+  background: var(--panel-hi);
+  border: 1px solid var(--rule);
+  border-radius: 10px 10px 2px 10px;
+  padding: 9px 13px;
+}
+
+/* Assistant replies read as terminal output: no bubble, an amber rule instead.
+   The asymmetry separates "what you said" from "what the machine answered". */
+.msg.bot {
+  align-self: flex-start;
+  border-left: 2px solid var(--amber);
+  padding: 1px 0 1px 13px;
+  max-width: 100%;
+}
+
+.msg.err {
+  align-self: stretch;
+  border-left: 2px solid var(--down);
+  padding: 1px 0 1px 13px;
+  color: var(--down);
+  font-size: 13px;
+  font-family: var(--mono);
+  max-width: 100%;
+}
+
+.tool {
+  align-self: flex-start;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--amber-dim);
+  letter-spacing: 0.04em;
+}
+
+.empty {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.empty p {
+  margin: 0 0 3px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.chip {
+  text-align: left;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 9px 12px;
+  color: var(--text);
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.chip:hover:not(:disabled) {
+  border-color: var(--amber-dim);
+  background: var(--panel-hi);
+}
+.chip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Caret blink: the one motion in the app, and it's the terminal's own idiom. */
+.caret {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  background: var(--amber);
+  vertical-align: text-bottom;
+  animation: blink 1.1s step-end infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.composer {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--rule);
+  background: var(--void);
+}
+
+.composer textarea {
+  flex: 1;
+  resize: none;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 9px 11px;
+  line-height: 1.45;
+  max-height: 120px;
+}
+.composer textarea:focus {
+  outline: none;
+  border-color: var(--amber-dim);
+}
+.composer textarea::placeholder {
+  color: var(--dim);
+}
+
+.send {
+  flex: none;
+  align-self: flex-end;
+  width: 40px;
+  height: 38px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--amber);
+  color: var(--void);
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.send:disabled {
+  opacity: 0.32;
+  cursor: not-allowed;
+}
+
+.disclaimer {
+  padding: 0 12px 10px;
+  background: var(--void);
+  font-size: 10.5px;
+  color: var(--dim);
+  text-align: center;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────
+   Below 900px the split stacks. The chart keeps a fixed share of the viewport
+   so it stays readable, and the chat takes the rest and scrolls. */
+@media (max-width: 900px) {
+  .app {
+    grid-template-rows: var(--header-h) var(--tape-h) 1fr;
+  }
+  .split {
+    grid-template-columns: 1fr;
+    /* The widget's own toolbars consume a fixed ~150px regardless of height,
+       so a percentage that looks generous still leaves the candles squeezed.
+       48vh keeps the price action legible while the chat stays reachable. */
+    grid-template-rows: 48vh minmax(0, 1fr);
+  }
+  .chart {
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .msg {
+    max-width: 96%;
+  }
+}
