@@ -43,6 +43,8 @@ The market data feed needs no API key, so the chart, the tape, and
 
 ## How it works
 
+![Architecture](docs/architecture.png)
+
 ```
 Browser
   ├── TradingView widget ─────────────► BINANCE:BTCUSDT candles

@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="1180" viewBox="0 0 1820 1180">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0" stop-color="#0E1218"/><stop offset="1" stop-color="#0B0E13"/>
+</linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+  <stop offset="0" stop-color="#FFB020" stop-opacity="0.07"/>
+  <stop offset="0.55" stop-color="#FFB020" stop-opacity="0.015"/>
+  <stop offset="1" stop-color="#FFB020" stop-opacity="0"/>
+</radialGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+  <circle cx="1.2" cy="1.2" r="1.1" fill="#1b2634" opacity="0.55"/>
+</pattern>
+<filter id="soft" x="-25%" y="-25%" width="150%" height="160%">
+  <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.40"/>
+</filter>
+<filter id="cont" x="-15%" y="-15%" width="130%" height="130%">
+  <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+</filter>
+<marker id="ah-teal" markerWidth="10" markerHeight="10" refX="7.2" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0.5,0.5 L8.5,4 L0.5,7.5 L2.6,4 Z" fill="#2FB7A8"/></marker>
+<marker id="ah-amber" markerWidth="10" markerHeight="10" refX="7.2" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0.5,0.5 L8.5,4 L0.5,7.5 L2.6,4 Z" fill="#FFB020"/></marker>
+<marker id="ah-violet" markerWidth="10" markerHeight="10" refX="7.2" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0.5,0.5 L8.5,4 L0.5,7.5 L2.6,4 Z" fill="#A78BFA"/></marker>
+<marker id="ah-dim" markerWidth="10" markerHeight="10" refX="7.2" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0.5,0.5 L8.5,4 L0.5,7.5 L2.6,4 Z" fill="#66707E"/></marker>
+</defs>
+<rect width="1820" height="1180" fill="url(#bg)"/>
+<rect width="1820" height="1180" fill="url(#dots)"/>
+<rect width="1820" height="1180" fill="url(#glow)"/>
+<rect x="56" y="70" width="6" height="42" rx="1" fill="#FFB020"/>
+<text x="78.0" y="100.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="38" font-weight="700" fill="#F2F5F9" text-anchor="start">BTC Terminal</text>
+<text x="80.0" y="130.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="12.5" font-weight="400" fill="#8791A0" text-anchor="start" letter-spacing="2">SYSTEM ARCHITECTURE  ·  REAL-TIME MARKET DATA + GROUNDED LLM ANALYSIS</text>
+<rect x="80.0" y="144.0" width="81.2" height="24.0" rx="12" ry="12" fill="#141A22" stroke="#222c38" stroke-width="1" />
+<text x="120.6" y="160.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#AEB8C4" text-anchor="middle">React 18</text>
+<rect x="171.2" y="144.0" width="66.4" height="24.0" rx="12" ry="12" fill="#141A22" stroke="#222c38" stroke-width="1" />
+<text x="204.4" y="160.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#AEB8C4" text-anchor="middle">Vite 5</text>
+<rect x="247.6" y="144.0" width="73.8" height="24.0" rx="12" ry="12" fill="#141A22" stroke="#222c38" stroke-width="1" />
+<text x="284.5" y="160.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#AEB8C4" text-anchor="middle">FastAPI</text>
+<rect x="331.4" y="144.0" width="88.6" height="24.0" rx="12" ry="12" fill="#141A22" stroke="#222c38" stroke-width="1" />
+<text x="375.7" y="160.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#AEB8C4" text-anchor="middle">LangGraph</text>
+<rect x="430.0" y="144.0" width="133.0" height="24.0" rx="12" ry="12" fill="#141A22" stroke="#222c38" stroke-width="1" />
+<text x="496.5" y="160.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#AEB8C4" text-anchor="middle">Claude Opus 4.8</text>
+<rect x="573.0" y="144.0" width="59.0" height="24.0" rx="12" ry="12" fill="#141A22" stroke="#222c38" stroke-width="1" />
+<text x="602.5" y="160.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#AEB8C4" text-anchor="middle">httpx</text>
+<text x="1764.0" y="78.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11.5" font-weight="400" fill="#66707E" text-anchor="end" letter-spacing="2.4">DATA FLOWS</text>
+<path d="M1360,100 L1400,100" stroke="#2FB7A8" stroke-width="2.6" marker-end="url(#ah-teal)" stroke-dasharray="1 7" stroke-linecap="round"/>
+<text x="1412.0" y="104.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#B7C1CD" text-anchor="start">Chart feed — client-side, bypasses backend</text>
+<path d="M1360,126 L1400,126" stroke="#FFB020" stroke-width="2.6" marker-end="url(#ah-amber)"/>
+<text x="1412.0" y="130.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#B7C1CD" text-anchor="start">Market snapshot — cached exchange data</text>
+<path d="M1360,152 L1400,152" stroke="#A78BFA" stroke-width="2.6" marker-end="url(#ah-violet)" marker-start="url(#ah-violet)"/>
+<text x="1412.0" y="156.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#B7C1CD" text-anchor="start">Chat — bidirectional SSE token stream</text>
+<text x="1412.0" y="180.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10" font-weight="400" fill="#66707E" text-anchor="start">dotted = fallback / internal call</text>
+<rect x="56.0" y="250.0" width="316.0" height="716.0" rx="16" ry="16" fill="#10151C" stroke="#283341" stroke-width="1.4" filter="url(#cont)"/>
+<rect x="57.5" y="251.5" width="313.0" height="1.6" rx="0.8" fill="#ffffff" opacity="0.045"/>
+<rect x="76.0" y="274.0" width="22.0" height="4.0" rx="2" ry="2" fill="#87A2BE" />
+<text x="108.0" y="282.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="600" fill="#87A2BE" text-anchor="start" letter-spacing="2.4">CLIENT · BROWSER</text>
+<text x="352.0" y="282.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10.5" font-weight="400" fill="#66707E" text-anchor="end" letter-spacing="1">SPA</text>
+<rect x="424.0" y="250.0" width="320.0" height="716.0" rx="16" ry="16" fill="#10151C" stroke="#283341" stroke-width="1.4" filter="url(#cont)"/>
+<rect x="425.5" y="251.5" width="317.0" height="1.6" rx="0.8" fill="#ffffff" opacity="0.045"/>
+<rect x="444.0" y="274.0" width="22.0" height="4.0" rx="2" ry="2" fill="#6E8BB0" />
+<text x="476.0" y="282.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="600" fill="#6E8BB0" text-anchor="start" letter-spacing="2.4">API · FASTAPI</text>
+<text x="724.0" y="282.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10.5" font-weight="400" fill="#66707E" text-anchor="end" letter-spacing="1">uvicorn</text>
+<rect x="796.0" y="250.0" width="520.0" height="360.0" rx="16" ry="16" fill="#10151C" stroke="#283341" stroke-width="1.4" filter="url(#cont)"/>
+<rect x="797.5" y="251.5" width="517.0" height="1.6" rx="0.8" fill="#ffffff" opacity="0.045"/>
+<rect x="816.0" y="274.0" width="22.0" height="4.0" rx="2" ry="2" fill="#A78BFA" />
+<text x="848.0" y="282.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="600" fill="#A78BFA" text-anchor="start" letter-spacing="2.4">AGENT · LANGGRAPH</text>
+<text x="1296.0" y="282.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10.5" font-weight="400" fill="#66707E" text-anchor="end" letter-spacing="1">StateGraph</text>
+<rect x="796.0" y="622.0" width="520.0" height="344.0" rx="16" ry="16" fill="#10151C" stroke="#283341" stroke-width="1.4" filter="url(#cont)"/>
+<rect x="797.5" y="623.5" width="517.0" height="1.6" rx="0.8" fill="#ffffff" opacity="0.045"/>
+<rect x="816.0" y="646.0" width="22.0" height="4.0" rx="2" ry="2" fill="#FFB020" />
+<text x="848.0" y="654.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="600" fill="#FFB020" text-anchor="start" letter-spacing="2.4">MARKET DATA LAYER</text>
+<text x="1296.0" y="654.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10.5" font-weight="400" fill="#66707E" text-anchor="end" letter-spacing="1">cache-first</text>
+<text x="1564.0" y="236.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="12" font-weight="400" fill="#66707E" text-anchor="middle" letter-spacing="2.2">EXTERNAL SERVICES</text>
+<linearGradient id="cg53" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="76.0" y="300.0" width="276.0" height="78.0" rx="9" ry="9" fill="url(#cg53)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="77.0" y="301.0" width="274.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="84.0" y="309.0" width="3.5" height="60.0" rx="1.8" ry="1.8" fill="#2FB7A8" />
+<text x="96.0" y="334.8" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="14" font-weight="500" fill="#E6EBF1" text-anchor="start">TradingView Chart</text>
+<text x="96.0" y="361.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10.5" font-weight="400" fill="#8791A0" text-anchor="start">Advanced widget · candles + RSI</text>
+<linearGradient id="cg59" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="76.0" y="421.0" width="276.0" height="78.0" rx="9" ry="9" fill="url(#cg59)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="77.0" y="422.0" width="274.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="84.0" y="430.0" width="3.5" height="60.0" rx="1.8" ry="1.8" fill="#A78BFA" />
+<text x="96.0" y="455.8" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="14" font-weight="500" fill="#E6EBF1" text-anchor="start">Chat Panel</text>
+<text x="96.0" y="482.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10.5" font-weight="400" fill="#8791A0" text-anchor="start">streaming reply · optimistic UI</text>
+<linearGradient id="cg65" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="76.0" y="651.0" width="276.0" height="78.0" rx="9" ry="9" fill="url(#cg65)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="77.0" y="652.0" width="274.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="84.0" y="660.0" width="3.5" height="60.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="96.0" y="685.8" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="14" font-weight="500" fill="#E6EBF1" text-anchor="start">Market Tape</text>
+<text x="96.0" y="712.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10.5" font-weight="400" fill="#8791A0" text-anchor="start">polls /snapshot · every 8s</text>
+<linearGradient id="cg71" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="76.0" y="819.0" width="276.0" height="62.0" rx="9" ry="9" fill="url(#cg71)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="77.0" y="820.0" width="274.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="84.0" y="828.0" width="3.5" height="44.0" rx="1.8" ry="1.8" fill="#87A2BE" />
+<text x="96.0" y="847.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="14" font-weight="500" fill="#E6EBF1" text-anchor="start">api.js</text>
+<text x="96.0" y="868.6" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10.5" font-weight="400" fill="#8791A0" text-anchor="start">fetch + SSE frame parser</text>
+<rect x="444.0" y="300.0" width="280.0" height="26.0" rx="7" ry="7" fill="#171D26" stroke="#222c38" stroke-width="1" />
+<text x="458.0" y="317.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#8791A0" text-anchor="start">CORS middleware</text>
+<linearGradient id="cg79" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="444.0" y="340.0" width="280.0" height="54.0" rx="9" ry="9" fill="url(#cg79)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="445.0" y="341.0" width="278.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="452.0" y="349.0" width="3.5" height="36.0" rx="1.8" ry="1.8" fill="#87A2BE" />
+<text x="464.0" y="371.6" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">GET  /api/health</text>
+<linearGradient id="cg84" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="444.0" y="421.0" width="280.0" height="78.0" rx="9" ry="9" fill="url(#cg84)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="445.0" y="422.0" width="278.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="452.0" y="430.0" width="3.5" height="60.0" rx="1.8" ry="1.8" fill="#A78BFA" />
+<text x="464.0" y="455.8" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">POST /api/chat</text>
+<text x="464.0" y="482.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10" font-weight="400" fill="#8791A0" text-anchor="start">SSE · extract_text() drops thinking/tool</text>
+<linearGradient id="cg90" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="444.0" y="651.0" width="280.0" height="78.0" rx="9" ry="9" fill="url(#cg90)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="445.0" y="652.0" width="278.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="452.0" y="660.0" width="3.5" height="60.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="464.0" y="685.8" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="12.5" font-weight="500" fill="#E6EBF1" text-anchor="start">GET  /api/market/snapshot</text>
+<text x="464.0" y="712.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10" font-weight="400" fill="#8791A0" text-anchor="start">price + indicator summary</text>
+<text x="816.0" y="330.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10" font-weight="400" fill="#66707E" text-anchor="start">system prompt: grounds on snapshot · forbids inventing numbers</text>
+<rect x="822.0" y="442.0" width="88.0" height="36.0" rx="18.0" ry="18.0" fill="#151B23" stroke="#A78BFA" stroke-width="1.4" filter="url(#soft)"/>
+<text x="866.0" y="464.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="12" font-weight="600" fill="#DCE3EC" text-anchor="middle" letter-spacing="1">START</text>
+<linearGradient id="cg99" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="946.0" y="428.0" width="150.0" height="64.0" rx="9" ry="9" fill="url(#cg99)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="947.0" y="429.0" width="148.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="954.0" y="437.0" width="3.5" height="46.0" rx="1.8" ry="1.8" fill="#A78BFA" />
+<text x="966.0" y="456.9" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">fetch_market</text>
+<text x="966.0" y="479.1" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="9.5" font-weight="400" fill="#8791A0" text-anchor="start">runs first → inject</text>
+<linearGradient id="cg105" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="1126.0" y="428.0" width="152.0" height="64.0" rx="9" ry="9" fill="url(#cg105)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1127.0" y="429.0" width="150.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="1134.0" y="437.0" width="3.5" height="46.0" rx="1.8" ry="1.8" fill="#A78BFA" />
+<text x="1146.0" y="456.9" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">agent</text>
+<text x="1146.0" y="479.1" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="9.5" font-weight="400" fill="#8791A0" text-anchor="start">ChatAnthropic</text>
+<linearGradient id="cg111" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="1126.0" y="546.0" width="152.0" height="58.0" rx="9" ry="9" fill="url(#cg111)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1127.0" y="547.0" width="150.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="1134.0" y="555.0" width="3.5" height="40.0" rx="1.8" ry="1.8" fill="#A78BFA" />
+<text x="1146.0" y="572.4" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">tools</text>
+<text x="1146.0" y="592.8" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="9.5" font-weight="400" fill="#8791A0" text-anchor="start">get_candles 5m/15m</text>
+<rect x="866.0" y="557.0" width="84.0" height="36.0" rx="18.0" ry="18.0" fill="#151B23" stroke="#6E7688" stroke-width="1.4" filter="url(#soft)"/>
+<text x="908.0" y="579.0" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="12" font-weight="600" fill="#DCE3EC" text-anchor="middle" letter-spacing="1">END</text>
+<path d="M 910.0,460.0 L 946.0,460.0" fill="none" stroke="#66707E" stroke-width="1.8" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-dim)"/>
+<path d="M 1096.0,460.0 L 1126.0,460.0" fill="none" stroke="#66707E" stroke-width="1.8" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-dim)"/>
+<path d="M 1202.0,492.0 L 1202.0,546.0" fill="none" stroke="#66707E" stroke-width="1.8" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-dim)" marker-start="url(#ah-dim)"/>
+<rect x="1237.6" y="507.2" width="40.8" height="21.5" rx="10.75" ry="10.75" fill="#0C1118" stroke="#66707E" stroke-width="1" opacity="0.95"/>
+<text x="1258.0" y="521.2" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="9.5" font-weight="400" fill="#CBD5E1" text-anchor="middle">loop</text>
+<path d="M 1150.0,492.0 L 1150.0,521.0 Q 1150.0,532.0 1139.0,532.0 L 919.0,532.0 Q 908.0,532.0 908.0,543.0 L 908.0,557.0" fill="none" stroke="#66707E" stroke-width="1.7" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-dim)"/>
+<rect x="1048.2" y="521.2" width="63.6" height="21.5" rx="10.75" ry="10.75" fill="#0C1118" stroke="#66707E" stroke-width="1" opacity="0.95"/>
+<text x="1080.0" y="535.2" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="9.5" font-weight="400" fill="#CBD5E1" text-anchor="middle">end_turn</text>
+<linearGradient id="cg127" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="824.0" y="661.0" width="152.0" height="58.0" rx="9" ry="9" fill="url(#cg127)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="825.0" y="662.0" width="150.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="832.0" y="670.0" width="3.5" height="40.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="844.0" y="687.4" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">service</text>
+<text x="844.0" y="707.8" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="9.5" font-weight="400" fill="#8791A0" text-anchor="start">get_snapshot()</text>
+<linearGradient id="cg133" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="1070.0" y="661.0" width="162.0" height="58.0" rx="9" ry="9" fill="url(#cg133)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1071.0" y="662.0" width="160.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="1078.0" y="670.0" width="3.5" height="40.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="1090.0" y="687.4" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">indicators</text>
+<text x="1090.0" y="707.8" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="9" font-weight="400" fill="#8791A0" text-anchor="start">SMA·RSI·ATR·vol·trend</text>
+<linearGradient id="cg139" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="824.0" y="765.0" width="152.0" height="54.0" rx="9" ry="9" fill="url(#cg139)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="825.0" y="766.0" width="150.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="832.0" y="774.0" width="3.5" height="36.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="844.0" y="789.7" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">TTL cache</text>
+<text x="844.0" y="808.9" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="9" font-weight="400" fill="#8791A0" text-anchor="start">single-flight·stale-ok</text>
+<linearGradient id="cg145" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="824.0" y="863.0" width="152.0" height="54.0" rx="9" ry="9" fill="url(#cg145)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="825.0" y="864.0" width="150.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="832.0" y="872.0" width="3.5" height="36.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="844.0" y="887.7" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="13" font-weight="500" fill="#E6EBF1" text-anchor="start">feeds</text>
+<text x="844.0" y="906.9" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="9.5" font-weight="400" fill="#8791A0" text-anchor="start">normalize → Candle</text>
+<path d="M 900.0,719.0 L 900.0,765.0" fill="none" stroke="#8791A0" stroke-width="1.8" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-dim)"/>
+<path d="M 900.0,819.0 L 900.0,863.0" fill="none" stroke="#8791A0" stroke-width="1.8" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-dim)"/>
+<path d="M 976.0,690.0 L 1070.0,690.0" fill="none" stroke="#8791A0" stroke-width="1.7" stroke-linejoin="round" opacity="1.0" stroke-dasharray="1 7" stroke-linecap="round" marker-end="url(#ah-dim)"/>
+<rect x="994.0" y="661.2" width="57.9" height="21.5" rx="10.75" ry="10.75" fill="#0C1118" stroke="#8791A0" stroke-width="1" opacity="0.95"/>
+<text x="1023.0" y="675.2" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="9.5" font-weight="400" fill="#CBD5E1" text-anchor="middle">analyze</text>
+<linearGradient id="cg156" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="1392.0" y="303.0" width="344.0" height="72.0" rx="9" ry="9" fill="url(#cg156)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1393.0" y="304.0" width="342.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="1400.0" y="312.0" width="3.5" height="54.0" rx="1.8" ry="1.8" fill="#2FB7A8" />
+<text x="1412.0" y="335.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="15" font-weight="500" fill="#E6EBF1" text-anchor="start">TradingView</text>
+<text x="1412.0" y="359.8" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10.5" font-weight="400" fill="#8791A0" text-anchor="start">s3.tradingview.com · tv.js + candles</text>
+<linearGradient id="cg162" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="1392.0" y="424.0" width="344.0" height="72.0" rx="9" ry="9" fill="url(#cg162)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1393.0" y="425.0" width="342.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="1400.0" y="433.0" width="3.5" height="54.0" rx="1.8" ry="1.8" fill="#A78BFA" />
+<text x="1412.0" y="456.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="15" font-weight="500" fill="#E6EBF1" text-anchor="start">Anthropic API</text>
+<text x="1412.0" y="480.8" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10" font-weight="400" fill="#8791A0" text-anchor="start">Claude Opus 4.8 · adaptive thinking · no temperature</text>
+<linearGradient id="cg168" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="1392.0" y="799.0" width="344.0" height="66.0" rx="9" ry="9" fill="url(#cg168)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1393.0" y="800.0" width="342.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="1400.0" y="808.0" width="3.5" height="48.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="1412.0" y="828.7" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="15" font-weight="500" fill="#E6EBF1" text-anchor="start">Binance API</text>
+<text x="1412.0" y="851.5" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10.5" font-weight="400" fill="#8791A0" text-anchor="start">primary · klines + 24h ticker</text>
+<linearGradient id="cg174" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#12161D"/></linearGradient>
+<rect x="1392.0" y="893.0" width="344.0" height="60.0" rx="9" ry="9" fill="url(#cg174)" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1393.0" y="894.0" width="342.0" height="1.4" rx="0.7" fill="#ffffff" opacity="0.05"/>
+<rect x="1400.0" y="902.0" width="3.5" height="42.0" rx="1.8" ry="1.8" fill="#FFB020" />
+<text x="1412.0" y="920.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="14" font-weight="500" fill="#E6EBF1" text-anchor="start">Coinbase API</text>
+<text x="1412.0" y="941.2" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="10" font-weight="400" fill="#8791A0" text-anchor="start">fallback · regional-block resilient</text>
+<path d="M 214.0,300.0 L 214.0,201.0 Q 214.0,190.0 225.0,190.0 L 1553.0,190.0 Q 1564.0,190.0 1564.0,201.0 L 1564.0,303.0" fill="none" stroke="#2FB7A8" stroke-width="2.6" stroke-linejoin="round" opacity="1.0" stroke-dasharray="1 7" stroke-linecap="round" marker-end="url(#ah-teal)" marker-start="url(#ah-teal)"/>
+<rect x="784.3" y="178.5" width="209.4" height="23.0" rx="11.5" ry="11.5" fill="#0C1118" stroke="#2FB7A8" stroke-width="1" opacity="0.95"/>
+<text x="889.0" y="193.7" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="11" font-weight="400" fill="#CBD5E1" text-anchor="middle">tv.js + candles · client-side</text>
+<path d="M 352.0,690.0 L 444.0,690.0" fill="none" stroke="#FFB020" stroke-width="2.6" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-amber)"/>
+<rect x="383.0" y="659.0" width="30.0" height="22.0" rx="11.0" ry="11.0" fill="#0C1118" stroke="#FFB020" stroke-width="1" opacity="0.95"/>
+<text x="398.0" y="673.4" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10" font-weight="400" fill="#CBD5E1" text-anchor="middle">8s</text>
+<path d="M 724.0,690.0 L 824.0,690.0" fill="none" stroke="#FFB020" stroke-width="2.6" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-amber)"/>
+<path d="M 976.0,890.0 L 1139.0,890.0 Q 1150.0,890.0 1150.0,879.0 L 1150.0,846.0 Q 1150.0,835.0 1161.0,835.0 L 1392.0,835.0" fill="none" stroke="#FFB020" stroke-width="2.6" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-amber)"/>
+<rect x="1250.0" y="824.0" width="42.0" height="22.0" rx="11.0" ry="11.0" fill="#0C1118" stroke="#FFB020" stroke-width="1" opacity="0.95"/>
+<text x="1271.0" y="838.4" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10" font-weight="400" fill="#CBD5E1" text-anchor="middle">REST</text>
+<path d="M 1564.0,865.0 L 1564.0,893.0" fill="none" stroke="#FFB020" stroke-width="2.2" stroke-linejoin="round" opacity="1.0" stroke-dasharray="1 7" stroke-linecap="round" marker-end="url(#ah-amber)"/>
+<rect x="1588.2" y="868.2" width="63.6" height="21.5" rx="10.75" ry="10.75" fill="#0C1118" stroke="#FFB020" stroke-width="1" opacity="0.95"/>
+<text x="1620.0" y="882.2" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="9.5" font-weight="400" fill="#CBD5E1" text-anchor="middle">fallback</text>
+<path d="M 352.0,460.0 L 444.0,460.0" fill="none" stroke="#A78BFA" stroke-width="2.6" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-violet)" marker-start="url(#ah-violet)"/>
+<rect x="380.0" y="429.0" width="36.0" height="22.0" rx="11.0" ry="11.0" fill="#0C1118" stroke="#A78BFA" stroke-width="1" opacity="0.95"/>
+<text x="398.0" y="443.4" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10" font-weight="400" fill="#CBD5E1" text-anchor="middle">SSE</text>
+<path d="M 724.0,460.0 L 822.0,460.0" fill="none" stroke="#A78BFA" stroke-width="2.6" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-violet)" marker-start="url(#ah-violet)"/>
+<rect x="746.9" y="429.2" width="52.2" height="21.5" rx="10.75" ry="10.75" fill="#0C1118" stroke="#A78BFA" stroke-width="1" opacity="0.95"/>
+<text x="773.0" y="443.2" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="9.5" font-weight="400" fill="#CBD5E1" text-anchor="middle">invoke</text>
+<path d="M 1021.0,492.0 L 1021.0,605.0 Q 1021.0,616.0 1010.0,616.0 L 801.0,616.0 Q 790.0,616.0 790.0,627.0 L 790.0,661.0 Q 790.0,672.0 801.0,672.0 L 830.0,672.0" fill="none" stroke="#A78BFA" stroke-width="2.3" stroke-linejoin="round" opacity="1.0" stroke-dasharray="1 7" stroke-linecap="round" marker-end="url(#ah-violet)"/>
+<rect x="970.0" y="551.0" width="102.0" height="22.0" rx="11.0" ry="11.0" fill="#0C1118" stroke="#A78BFA" stroke-width="1" opacity="0.95"/>
+<text x="1021.0" y="565.4" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="10" font-weight="400" fill="#CBD5E1" text-anchor="middle">get_snapshot()</text>
+<path d="M 1278.0,460.0 L 1392.0,460.0" fill="none" stroke="#A78BFA" stroke-width="2.6" stroke-linejoin="round" opacity="1.0" marker-end="url(#ah-violet)"/>
+<rect x="1308.9" y="427.2" width="52.2" height="21.5" rx="10.75" ry="10.75" fill="#0C1118" stroke="#A78BFA" stroke-width="1" opacity="0.95"/>
+<text x="1335.0" y="441.2" font-family="'IBM Plex Mono','DejaVu Sans Mono',ui-monospace,monospace" font-size="9.5" font-weight="400" fill="#CBD5E1" text-anchor="middle">Claude</text>
+<rect x="56.0" y="1012.0" width="410.5" height="96.0" rx="12" ry="12" fill="#10151C" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="56.0" y="1012.0" width="4.0" height="96.0" rx="2" ry="2" fill="#FFB020" />
+<circle cx="82.0" cy="1042" r="4.5" fill="#FFB020"/>
+<text x="96.0" y="1047.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="14.5" font-weight="600" fill="#E6EBF1" text-anchor="start">Grounded by construction</text>
+<text x="78.0" y="1078.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#8791A0" text-anchor="start">fetch_market runs before the model on every turn</text>
+<rect x="488.5" y="1012.0" width="410.5" height="96.0" rx="12" ry="12" fill="#10151C" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="488.5" y="1012.0" width="4.0" height="96.0" rx="2" ry="2" fill="#2FB7A8" />
+<circle cx="514.5" cy="1042" r="4.5" fill="#2FB7A8"/>
+<text x="528.5" y="1047.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="14.5" font-weight="600" fill="#E6EBF1" text-anchor="start">Cache-first</text>
+<text x="510.5" y="1078.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#8791A0" text-anchor="start">TTL · single-flight · stale-on-error — 286ms → 0.9ms</text>
+<rect x="921.0" y="1012.0" width="410.5" height="96.0" rx="12" ry="12" fill="#10151C" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="921.0" y="1012.0" width="4.0" height="96.0" rx="2" ry="2" fill="#A78BFA" />
+<circle cx="947.0" cy="1042" r="4.5" fill="#A78BFA"/>
+<text x="961.0" y="1047.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="14.5" font-weight="600" fill="#E6EBF1" text-anchor="start">Provider fallback</text>
+<text x="943.0" y="1078.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#8791A0" text-anchor="start">Binance → Coinbase, resilient to regional blocks</text>
+<rect x="1353.5" y="1012.0" width="410.5" height="96.0" rx="12" ry="12" fill="#10151C" stroke="#283341" stroke-width="1.2" filter="url(#soft)"/>
+<rect x="1353.5" y="1012.0" width="4.0" height="96.0" rx="2" ry="2" fill="#87A2BE" />
+<circle cx="1379.5" cy="1042" r="4.5" fill="#87A2BE"/>
+<text x="1393.5" y="1047.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="14.5" font-weight="600" fill="#E6EBF1" text-anchor="start">Stateless API</text>
+<text x="1375.5" y="1078.0" font-family="'IBM Plex Sans','DejaVu Sans',system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#8791A0" text-anchor="start">client owns history; SSE keeps replies real-time</text>
+</svg>
